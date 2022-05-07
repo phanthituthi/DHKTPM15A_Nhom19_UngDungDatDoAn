@@ -3,10 +3,13 @@ package edu.iuh.nhom19_appdatdoan.adapter;
 import static java.lang.Float.valueOf;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -82,6 +85,56 @@ public class CakeAdapter extends BaseAdapter {
         TextView tvNameCake;
         TextView tvNoteCake;
         TextView tvpriceCake;
+    }
+
+    //Tim tat ca cac loai banh
+    public void allCake(){
+        listFilter = arrayList;
+        notifyDataSetChanged();
+    }
+
+    //tim loai banh bugger
+    public void filterBugger(){
+        filterCake("burger");
+    }
+
+    //tim loai banh sandwich
+    public void fileterSandSwich(){
+        filterCake("sandwich");
+    }
+
+    //tim loai banh pizza
+    public void filterPizza(){
+        filterCake("pizza");
+    }
+
+    public void filterCake(String filter) {
+        listFilter = new ArrayList<>();
+        for (Cake item : arrayList){
+            if(item.getNameCake().toLowerCase().indexOf(filter) != -1){
+                listFilter.add(item);
+            }
+        }
+        notifyDataSetChanged();
+    }
+
+    public void filterByText(EditText text){
+        listFilter = new ArrayList<>();
+        for(Cake item : arrayList){
+            if(item.getNameCake().toLowerCase().indexOf(text.toString()) != -1){
+                listFilter.add(item);
+            }
+        }
+        notifyDataSetChanged();
+    }
+
+    public void setActiveButton(Button btnActive, Button btn1, Button btn2){
+        btnActive.setBackgroundColor(Color.BLUE);
+        btnActive.setTextColor(Color.WHITE);
+        btn1.setBackgroundColor(Color.parseColor("#D1CBCB"));
+        btn1.setTextColor(Color.BLACK);
+        btn2.setBackgroundColor(Color.parseColor("#D1CBCB"));
+        btn2.setTextColor(Color.BLACK);
     }
 
 }

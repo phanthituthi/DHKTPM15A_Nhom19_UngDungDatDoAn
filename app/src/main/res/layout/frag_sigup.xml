@@ -14,11 +14,12 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="66dp"
         android:backgroundTint="#FBA808"
-        android:text="Register"
+        android:text="@string/register"
+        android:textColor="#5D4037"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtConPass" />
 
     <TextView
         android:id="@+id/textView4"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
-        android:text="Email address"
+        android:text="@string/email_address"
         android:textColor="#040404"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -38,58 +39,66 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Password"
+        android:text="@string/password"
         android:textColor="#040404"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintStart_toStartOf="@+id/txtEmail3"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail3" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Confirm Password"
+        android:text="@string/confirm_password"
         android:textColor="#040404"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintStart_toStartOf="@+id/txtPass"
+        app:layout_constraintTop_toBottomOf="@+id/txtPass" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/txtEmail3"
         android:layout_width="348dp"
         android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="348dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail3"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/txtConPass"
         android:layout_width="348dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>

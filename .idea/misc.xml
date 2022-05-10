@@ -28,6 +28,8 @@
         <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
         <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/frag_login.xml" value="0.18802083333333333" />
         <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/frag_sigup.xml" value="0.264" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/fragment_cart.xml" value="0.18802083333333333" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
       </map>
     </option>
   </component>

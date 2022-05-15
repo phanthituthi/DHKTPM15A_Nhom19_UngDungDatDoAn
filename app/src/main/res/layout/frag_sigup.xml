@@ -7,7 +7,7 @@
     android:background="@drawable/login">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRe"
         android:layout_width="279dp"
         android:layout_height="49dp"
         android:layout_marginStart="66dp"
@@ -43,8 +43,8 @@
         android:textColor="#040404"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/txtEmail3"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail3" />
+        app:layout_constraintStart_toStartOf="@+id/txtEmailRe"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailRe" />
 
     <TextView
         android:id="@+id/textView6"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtPass" />
 
     <EditText
-        android:id="@+id/txtEmail3"
+        android:id="@+id/txtEmailRe"
         android:layout_width="348dp"
         android:layout_height="39dp"
         android:layout_marginTop="12dp"
@@ -82,7 +82,7 @@
         android:inputType="textPersonName"
         android:text=""
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtEmail3"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailRe"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="SpeakableTextPresentCheck"

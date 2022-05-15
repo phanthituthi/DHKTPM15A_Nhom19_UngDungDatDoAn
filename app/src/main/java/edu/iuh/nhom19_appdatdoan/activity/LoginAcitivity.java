@@ -35,7 +35,7 @@ public class LoginAcitivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         editEmail = findViewById(R.id.txtEmail);
-        editPass = findViewById(R.id.txtPass);
+        editPass = findViewById(R.id.txtPassLogin);
         butLogin = findViewById(R.id.btnLogin);
 
 
@@ -69,7 +69,7 @@ public class LoginAcitivity extends AppCompatActivity {
                     final DatabaseReference ref = FirebaseDatabase.getInstance().getReference("User");
 
                     Toast.makeText(LoginAcitivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginAcitivity.this, FoodActivity.class);
+                    Intent intent = new Intent(LoginAcitivity.this, HomePage.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(LoginAcitivity.this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();

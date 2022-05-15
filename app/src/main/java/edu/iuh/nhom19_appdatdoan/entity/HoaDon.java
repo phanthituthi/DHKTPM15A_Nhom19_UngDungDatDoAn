@@ -1,6 +1,7 @@
 package edu.iuh.nhom19_appdatdoan.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class HoaDon implements Serializable {
     private String hoaDonId;
     private Date thoiGian;
     private Double tongTien;
-    private List<CTHD> cthds;
+    private ArrayList<CTHD> cthds;
     public HoaDon() {
     }
 
@@ -49,11 +50,11 @@ public class HoaDon implements Serializable {
         return cthds;
     }
 
-    public void setCthds(List<CTHD> cthds) {
+    public void setCthds(ArrayList<CTHD> cthds) {
         this.cthds = cthds;
     }
 
-    public HoaDon(String email, String hoaDonId, Date thoiGian, Double tongTien, List<CTHD> cthds) {
+    public HoaDon(String email, String hoaDonId, Date thoiGian, Double tongTien, ArrayList<CTHD> cthds) {
         this.email = email;
         this.hoaDonId = hoaDonId;
         this.thoiGian = thoiGian;

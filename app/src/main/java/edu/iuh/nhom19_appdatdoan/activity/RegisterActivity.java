@@ -95,7 +95,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     Toast.makeText(RegisterActivity.this, "Đăng kí thành tài khoản thành công", Toast.LENGTH_SHORT).show();
 
                                     edtEmail.setText("");
-                                    Intent intent = new Intent(RegisterActivity.this, FoodActivity.class);
+                                    Intent intent = new Intent(RegisterActivity.this, HomePage.class);
                                     startActivity(intent);
                                 }else {
                                     Toast.makeText(RegisterActivity.this, "Đăng kí thất bại!!!", Toast.LENGTH_SHORT).show();

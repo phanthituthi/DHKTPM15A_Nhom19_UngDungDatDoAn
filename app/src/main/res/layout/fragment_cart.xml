@@ -5,6 +5,8 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".fragment.CartFragment"
     tools:layout_editor_absoluteX="16dp"
     tools:layout_editor_absoluteY="109dp">
@@ -25,7 +27,7 @@
         android:id="@+id/tvNameAvatar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="216dp"
         android:layout_marginTop="16dp"
         android:text="Hi, DiepVuong"
         android:textColor="#FFC107"
@@ -98,4 +100,17 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gvList" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toStartOf="@+id/txtGioHang"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

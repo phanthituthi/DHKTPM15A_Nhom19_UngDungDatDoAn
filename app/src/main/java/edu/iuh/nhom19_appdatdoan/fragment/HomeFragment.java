@@ -4,8 +4,6 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +33,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         arrayList = new ArrayList<>();
-        glList = view.findViewById(R.id.gvList);
+        glList = view.findViewById(R.id.gvListCart);
 
         btnBugger = view.findViewById(R.id.btnBuger);
         btnSandSwich = view.findViewById(R.id.btnSandSwich);
@@ -76,23 +74,6 @@ public class HomeFragment extends Fragment {
                 adt.setActiveButton(btnPizza, btnBugger, btnSandSwich);
             }
         });
-
-//        edtSearch.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable editable) {
-//                adt.filterByText(edtSearch);
-//            }
-//        });
 
         return view;
 

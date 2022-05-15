@@ -2,13 +2,14 @@ package edu.iuh.nhom19_appdatdoan.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 public class HoaDon implements Serializable {
     private String email;
     private String hoaDonId;
     private Date thoiGian;
     private Double tongTien;
-
+    private List<CTHD> cthds;
     public HoaDon() {
     }
 
@@ -44,11 +45,20 @@ public class HoaDon implements Serializable {
         this.tongTien = tongTien;
     }
 
-    public HoaDon(String email, String hoaDonId, Date thoiGian, Double tongTien) {
+    public List<CTHD> getCthds() {
+        return cthds;
+    }
+
+    public void setCthds(List<CTHD> cthds) {
+        this.cthds = cthds;
+    }
+
+    public HoaDon(String email, String hoaDonId, Date thoiGian, Double tongTien, List<CTHD> cthds) {
         this.email = email;
         this.hoaDonId = hoaDonId;
         this.thoiGian = thoiGian;
         this.tongTien = tongTien;
+        this.cthds = cthds;
     }
 
     @Override
@@ -58,6 +68,7 @@ public class HoaDon implements Serializable {
                 ", hoaDonId='" + hoaDonId + '\'' +
                 ", thoiGian=" + thoiGian +
                 ", tongTien=" + tongTien +
+                ", cthds=" + cthds +
                 '}';
     }
 }

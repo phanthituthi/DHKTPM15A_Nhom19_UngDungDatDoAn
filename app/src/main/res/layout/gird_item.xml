@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvNoteCake" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgthem"
         android:layout_width="23dp"
         android:layout_height="23dp"
         android:layout_marginStart="104dp"

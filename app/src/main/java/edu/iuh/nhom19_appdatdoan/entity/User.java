@@ -1,4 +1,7 @@
 package edu.iuh.nhom19_appdatdoan.entity;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+
 }

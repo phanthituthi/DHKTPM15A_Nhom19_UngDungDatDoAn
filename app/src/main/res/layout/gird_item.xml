@@ -15,14 +15,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgvCake"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/tvDanhGiaCake"
-        app:layout_constraintTop_toBottomOf="@+id/tvDanhGiaCake"
-        app:srcCompat="@drawable/bugger" />
+    <TextView
+        android:id="@+id/tvNoteCake"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:text="200 gr chicken + cheese Lettuce + tomato"
+        android:textColor="#070707"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCake"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameCake" />
 
     <TextView
         android:id="@+id/tvNameCake"
@@ -38,16 +39,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imgvCake" />
 
     <TextView
-        android:id="@+id/tvNoteCake"
-        android:layout_width="152dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="20dp"
-        android:text="200 gr chicken + cheese Lettuce + tomato"
-        android:textColor="#070707"
-        app:layout_constraintStart_toStartOf="@+id/tvNameCake"
-        app:layout_constraintTop_toBottomOf="@+id/tvNameCake" />
-
-    <TextView
         android:id="@+id/tvPriceCake"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,14 +52,13 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="23dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="104dp"
+        android:id="@+id/imgvCake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/tvPriceCake"
-        app:layout_constraintTop_toBottomOf="@+id/tvNoteCake"
-        app:srcCompat="@drawable/add" />
+        app:layout_constraintStart_toStartOf="@+id/tvDanhGiaCake"
+        app:layout_constraintTop_toBottomOf="@+id/tvDanhGiaCake"
+        app:srcCompat="@drawable/bugger" />
 
     <TextView
         android:id="@+id/textView14"
@@ -81,6 +71,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/tvNoteCake" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceCake"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoteCake"
+        app:srcCompat="@drawable/add" />
 
     <ImageView
         android:id="@+id/imageView8"

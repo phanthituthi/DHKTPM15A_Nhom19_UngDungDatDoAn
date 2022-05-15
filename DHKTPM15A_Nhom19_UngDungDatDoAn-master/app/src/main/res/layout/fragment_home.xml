@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Home">
+
+    <TextView
+        android:id="@+id/tvNameAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Hi, DiepVuong"
+        android:textColor="#FFC107"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgvAvatar"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="249dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:text="Order Your Food  Fast and Free"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameAvatar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="93dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgvAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/imgvAvatar"
+        app:srcCompat="@drawable/flat" />
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/search_edt_background"
+        android:drawableLeft="@drawable/search"
+        android:ems="20"
+        android:hint="  Search Your Favorite Food"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textViewCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Categories"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtSearch"
+        app:layout_constraintTop_toBottomOf="@+id/edtSearch" />
+
+    <TextView
+        android:id="@+id/textViewPopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Popular"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnBuger"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuger" />
+
+    <GridView
+        android:id="@+id/gvList"
+        android:layout_width="413dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="8dp"
+        android:numColumns="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPopular" />
+
+    <Button
+        android:id="@+id/btnBuger"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="#FF9431"
+        android:drawableLeft="@drawable/burger"
+        android:text="Burger"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSandSwich"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategories" />
+
+    <Button
+        android:id="@+id/btnSandSwich"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FF9431"
+        android:drawableLeft="@drawable/sandswich"
+        android:text="Sandwich"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBuger"
+        app:layout_constraintEnd_toStartOf="@+id/btnPizza"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBuger"
+        app:layout_constraintTop_toTopOf="@+id/btnBuger" />
+
+    <Button
+        android:id="@+id/btnPizza"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FF9431"
+        android:drawableLeft="@drawable/sandswich"
+        android:text="Pizza"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSandSwich"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSandSwich"
+        app:layout_constraintTop_toTopOf="@+id/btnSandSwich" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

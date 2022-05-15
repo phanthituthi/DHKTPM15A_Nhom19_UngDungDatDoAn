@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/activity_home_page.xml" value="0.22826086956521738" />
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/activity_login_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/frag_login.xml" value="0.264" />
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/frag_sigup.xml" value="0.264" />
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/fragment_home.xml" value="0.182518115942029" />
+        <entry key="..\:/DHKTPM15A_Nhom19_UngDungDatDoAn-master/app/src/main/res/layout/gird_item.xml" value="0.182518115942029" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/background.xml" value="0.175" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/background_fragment.xml" value="0.134" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/background_girditem.xml" value="0.134" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/background_home.xml" value="0.134" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/background_loginregister.xml" value="0.134" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/btn_categories.xml" value="0.134" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/search_edt_background.xml" value="0.134" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/activity_home_page.xml" value="0.35104166666666664" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/activity_homepage.xml" value="0.16666666666666666" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/activity_login_register.xml" value="0.8333333333333334" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/frag_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/frag_sigup.xml" value="0.3333333333333333" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/fragment_blank.xml" value="0.17552083333333332" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/fragment_cart.xml" value="0.17552083333333332" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/fragment_frag_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/fragment_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/layout/gird_item.xml" value="0.3125734430082256" />
+        <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/activity_home_page.xml" value="0.18802083333333333" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/activity_login_register.xml" value="0.18802083333333333" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/frag_login.xml" value="0.18802083333333333" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/frag_sigup.xml" value="0.264" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/fragment_cart.xml" value="0.18802083333333333" />
+        <entry key="..\:/deployHeroku/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

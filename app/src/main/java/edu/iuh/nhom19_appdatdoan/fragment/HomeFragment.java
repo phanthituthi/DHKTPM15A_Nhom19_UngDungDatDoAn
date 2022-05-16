@@ -149,6 +149,7 @@ public class HomeFragment extends Fragment {
                 b.putString("note", arrayList.get(i).getNoteCake());
                 b.putInt("price", arrayList.get(i).getPriceCake());
                 b.putInt("img", arrayList.get(i).getImgCake());
+                b.putInt("danhgia", arrayList.get(i).getDanhgia());
                 intent.putExtras(b);
 
                 startActivity(intent);

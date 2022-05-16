@@ -40,6 +40,7 @@ public class    CartFragment extends Fragment {
         String txtNote = getActivity().getIntent().getExtras().getString("note");
         String txtprice = getActivity().getIntent().getExtras().getString("price");
         String txtimg = getActivity().getIntent().getExtras().getString("img");
+        String txtDanhGia = getActivity().getIntent().getExtras().getString("danhgia");
         lvCake = view.findViewById(R.id.listspGioHang);
         editSoLuong = view.findViewById(R.id.editSL);
         txtGia = view.findViewById(R.id.txtGiaThuc);

@@ -38,8 +38,6 @@ public class LoginAcitivity extends AppCompatActivity {
         editPass = findViewById(R.id.txtPassLogin);
         butLogin = findViewById(R.id.btnLogin);
 
-
-
         butLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -10,7 +10,7 @@ public class HoaDon implements Serializable {
     private String hoaDonId;
     private Date thoiGian;
     private Double tongTien;
-    private ArrayList<CTHD> cthds;
+    private CTHD cthd;
     public HoaDon() {
     }
 
@@ -46,20 +46,14 @@ public class HoaDon implements Serializable {
         this.tongTien = tongTien;
     }
 
-    public List<CTHD> getCthds() {
-        return cthds;
-    }
 
-    public void setCthds(ArrayList<CTHD> cthds) {
-        this.cthds = cthds;
-    }
 
-    public HoaDon(String email, String hoaDonId, Date thoiGian, Double tongTien, ArrayList<CTHD> cthds) {
+    public HoaDon(String email, String hoaDonId, Date thoiGian, Double tongTien, CTHD cthd) {
         this.email = email;
         this.hoaDonId = hoaDonId;
         this.thoiGian = thoiGian;
         this.tongTien = tongTien;
-        this.cthds = cthds;
+        this.cthd = cthd;
     }
 
     @Override
@@ -69,7 +63,7 @@ public class HoaDon implements Serializable {
                 ", hoaDonId='" + hoaDonId + '\'' +
                 ", thoiGian=" + thoiGian +
                 ", tongTien=" + tongTien +
-                ", cthds=" + cthds +
+                ", cthd=" + cthd +
                 '}';
     }
 }

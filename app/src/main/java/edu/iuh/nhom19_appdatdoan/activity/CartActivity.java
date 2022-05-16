@@ -1,4 +1,6 @@
 package edu.iuh.nhom19_appdatdoan.activity;
 
-public class CartActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class CartActivity extends AppCompatActivity {
 }

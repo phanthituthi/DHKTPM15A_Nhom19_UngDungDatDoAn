@@ -1,14 +1,14 @@
 package edu.iuh.nhom19_appdatdoan.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
@@ -16,6 +16,8 @@ import android.widget.GridView;
 import java.util.ArrayList;
 
 import edu.iuh.nhom19_appdatdoan.R;
+import edu.iuh.nhom19_appdatdoan.activity.CartActivity;
+import edu.iuh.nhom19_appdatdoan.activity.HomePage;
 import edu.iuh.nhom19_appdatdoan.adapter.CakeAdapter;
 import edu.iuh.nhom19_appdatdoan.entity.Cake;
 
@@ -35,12 +37,13 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         arrayList = new ArrayList<>();
-        glList = view.findViewById(R.id.gvList);
+        glList = view.findViewById(R.id.gvListCart);
 
         btnBugger = view.findViewById(R.id.btnBuger);
         btnSandSwich = view.findViewById(R.id.btnSandSwich);
         btnPizza = view.findViewById(R.id.btnPizza);
         edtSearch = view.findViewById(R.id.edtSearch);
+
 
         arrayList.add(new Cake(4, R.drawable.cake1, "Chicken burger", "200 gr chicken + cheese Lettuce + tomato", 35));
         arrayList.add(new Cake(5, R.drawable.cake2, "Chese burger", "120 gr meat + Lettuce cheese + onion + tomato", 25));
@@ -76,25 +79,23 @@ public class HomeFragment extends Fragment {
                 adt.setActiveButton(btnPizza, btnBugger, btnSandSwich);
             }
         });
+        glList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(String.valueOf(HomeFragment.this));
+                Bundle b = new Bundle();
 
-//        edtSearch.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable editable) {
-//                adt.filterByText(edtSearch);
-//            }
-//        });
+                intent.putExtras(b);
+
+                startActivity(intent);
+            }
+        });
+
+
+
 
         return view;
+
 
     }
 }

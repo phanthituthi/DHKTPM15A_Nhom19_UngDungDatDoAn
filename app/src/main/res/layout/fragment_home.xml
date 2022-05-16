@@ -54,7 +54,7 @@
     <EditText
         android:id="@+id/edtSearch"
         android:layout_width="377dp"
-        android:layout_height="48dp"
+        android:layout_height="41dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="17dp"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
-        android:id="@+id/textViewCategories"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtSearch" />
 
     <TextView
-        android:id="@+id/textViewPopular"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnBuger" />
 
     <GridView
-        android:id="@+id/gvListCart"
+        android:id="@+id/gvList"
         android:layout_width="413dp"
         android:layout_height="287dp"
         android:layout_marginTop="8dp"
@@ -101,12 +101,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPopular" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
         android:id="@+id/btnBuger"
         android:layout_width="110dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:layout_marginTop="11dp"
         android:backgroundTint="#FF9431"
         android:drawableLeft="@drawable/burger"
@@ -115,12 +115,12 @@
         app:layout_constraintEnd_toStartOf="@+id/btnSandSwich"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCategories" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
         android:id="@+id/btnSandSwich"
         android:layout_width="131dp"
-        android:layout_height="48dp"
+        android:layout_height="39dp"
         android:backgroundTint="#FF9431"
         android:drawableLeft="@drawable/sandswich"
         android:text="Sandwich"
@@ -134,7 +134,7 @@
     <Button
         android:id="@+id/btnPizza"
         android:layout_width="114dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:backgroundTint="#FF9431"
         android:drawableLeft="@drawable/sandswich"
         android:text="Pizza"

@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import edu.iuh.nhom19_appdatdoan.R;
 import edu.iuh.nhom19_appdatdoan.entity.User;
 
-public class RegisterActivity extends AppCompatActivity {
+public class  RegisterActivity extends AppCompatActivity {
 
     private EditText  edtEmail, edtPass1, edtPass2;
     private Button butRegister;

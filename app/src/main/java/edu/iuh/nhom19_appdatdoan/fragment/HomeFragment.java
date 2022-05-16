@@ -3,6 +3,7 @@ package edu.iuh.nhom19_appdatdoan.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -12,12 +13,22 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 import edu.iuh.nhom19_appdatdoan.R;
 import edu.iuh.nhom19_appdatdoan.activity.CartActivity;
 import edu.iuh.nhom19_appdatdoan.activity.HomePage;
+import edu.iuh.nhom19_appdatdoan.activity.UserInfo;
 import edu.iuh.nhom19_appdatdoan.adapter.CakeAdapter;
 import edu.iuh.nhom19_appdatdoan.entity.Cake;
 
@@ -29,6 +40,11 @@ public class HomeFragment extends Fragment {
     ArrayList<Cake> arrayList;
     Button btnBugger, btnSandSwich, btnPizza;
     EditText edtSearch;
+
+    ImageView imgView;
+    TextView tvNameAvavatar;
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,6 +60,9 @@ public class HomeFragment extends Fragment {
         btnPizza = view.findViewById(R.id.btnPizza);
         edtSearch = view.findViewById(R.id.edtSearch);
 
+        imgView = view.findViewById(R.id.imgvAvatar);
+        tvNameAvavatar = view.findViewById(R.id.tvNameAvatar);
+
 
         arrayList.add(new Cake(4, R.drawable.cake1, "Chicken burger", "200 gr chicken + cheese Lettuce + tomato", 35));
         arrayList.add(new Cake(5, R.drawable.cake2, "Chese burger", "120 gr meat + Lettuce cheese + onion + tomato", 25));
@@ -55,6 +74,33 @@ public class HomeFragment extends Fragment {
 //        adt = new CakeAdapter(HomeFragment.this, R.layout.gird_item, arrayList);
         adt = new CakeAdapter(getActivity(), R.layout.gird_item, arrayList);
         glList.setAdapter(adt);
+
+
+
+//        final DatabaseReference ref1 = database.getReference("User").
+//                child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+//        ref1.child("name").addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                String name = snapshot.getValue().toString();
+//                tvNameAvavatar.setText("Hi, " + name);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+
+
+
+        imgView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), UserInfo.class);
+                startActivity(intent);
+            }
+        });
 
         btnBugger.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BTLDiDong/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/activity_user_info.xml" value="0.22" />
+        <entry key="..\:/BTLDiDong/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/frag_login.xml" value="0.22" />
+        <entry key="..\:/BTLDiDong/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/frag_sigup.xml" value="0.3436988543371522" />
+        <entry key="..\:/BTLDiDong/DHKTPM15A_Nhom19_UngDungDatDoAn/app/src/main/res/layout/fragment_home.xml" value="0.17552083333333332" />
         <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1395" />
         <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/background.xml" value="0.175" />
         <entry key="..\:/ThucHanh3/THAdrioid/Nhom19AppDatDoAn/app/src/main/res/drawable/background_form_login.xml" value="0.1395" />

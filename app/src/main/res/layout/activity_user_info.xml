@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserInfo">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="221dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar123" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="diepvuong@gmail.com"
+        android:textColor="#453B3B"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/edtFullNameUser"
+        android:layout_width="315dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/edtAddUser"
+        android:layout_width="316dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/edtPhoneUser"
+        android:layout_width="315dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:text="Full name:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Address:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/edtFullNameUser"
+        app:layout_constraintTop_toBottomOf="@+id/edtFullNameUser" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Phone:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/edtAddUser"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddUser" />
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="302dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#D3BE0B"
+        android:text="update profile"
+        app:layout_constraintStart_toStartOf="@+id/edtPhoneUser"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhoneUser" />
+
+    <Button
+        android:id="@+id/btnLogoutProfile"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#D3BE0B"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdateProfile"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdateProfile"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateProfile" />
+</androidx.constraintlayout.widget.ConstraintLayout>

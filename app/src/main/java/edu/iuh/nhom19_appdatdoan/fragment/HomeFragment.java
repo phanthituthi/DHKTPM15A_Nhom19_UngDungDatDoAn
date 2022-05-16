@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -62,7 +63,21 @@ public class HomeFragment extends Fragment {
 
         imgView = view.findViewById(R.id.imgvAvatar);
         tvNameAvavatar = view.findViewById(R.id.tvNameAvatar);
+        final DatabaseReference ref1 = database.getReference("User").
+                child(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
+        ref1.child("name").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String name = snapshot.getValue().toString();
+                tvNameAvavatar.setText("hi, "+name);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         arrayList.add(new Cake(4, R.drawable.cake1, "Chicken burger", "200 gr chicken + cheese Lettuce + tomato", 35));
         arrayList.add(new Cake(5, R.drawable.cake2, "Chese burger", "120 gr meat + Lettuce cheese + onion + tomato", 25));
@@ -128,9 +143,12 @@ public class HomeFragment extends Fragment {
         glList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(String.valueOf(HomeFragment.this));
+                Intent intent = new Intent(String.valueOf(CartFragment.class));
                 Bundle b = new Bundle();
-
+                b.putString("name", arrayList.get(i).getNameCake());
+                b.putString("note", arrayList.get(i).getNoteCake());
+                b.putInt("price", arrayList.get(i).getPriceCake());
+                b.putInt("img", arrayList.get(i).getImgCake());
                 intent.putExtras(b);
 
                 startActivity(intent);

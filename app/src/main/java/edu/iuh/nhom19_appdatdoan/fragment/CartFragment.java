@@ -20,20 +20,19 @@ import edu.iuh.nhom19_appdatdoan.entity.HoaDon;
 
 public class    CartFragment extends Fragment {
 
-    GridView glList;
+    GridView glListcart;
     CakeAdapter cakeCart;
     List<Cake> cakeCarts;
     int tongTien=0;
-    HoaDon hoaDon;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cart, container, false);
-        glList = view.findViewById(R.id.gvListCart);
+        glListcart = view.findViewById(R.id.gvListCart);
   //      hoaDon = new HoaDon();
   //      cakeCart = new CakeAdapter(getActivity(), R.layout.item_cart, cakeCarts);
-        glList.setAdapter(cakeCart);
+        glListcart.setAdapter(cakeCart);
         for (Cake cake : cakeCarts) {
             tongTien=tongTien+cake.getPriceCake();
         }

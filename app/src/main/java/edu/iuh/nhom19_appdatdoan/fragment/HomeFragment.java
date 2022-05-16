@@ -1,5 +1,6 @@
 package edu.iuh.nhom19_appdatdoan.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
@@ -14,6 +16,8 @@ import android.widget.GridView;
 import java.util.ArrayList;
 
 import edu.iuh.nhom19_appdatdoan.R;
+import edu.iuh.nhom19_appdatdoan.activity.CartActivity;
+import edu.iuh.nhom19_appdatdoan.activity.HomePage;
 import edu.iuh.nhom19_appdatdoan.adapter.CakeAdapter;
 import edu.iuh.nhom19_appdatdoan.entity.Cake;
 
@@ -39,6 +43,7 @@ public class HomeFragment extends Fragment {
         btnSandSwich = view.findViewById(R.id.btnSandSwich);
         btnPizza = view.findViewById(R.id.btnPizza);
         edtSearch = view.findViewById(R.id.edtSearch);
+
 
         arrayList.add(new Cake(4, R.drawable.cake1, "Chicken burger", "200 gr chicken + cheese Lettuce + tomato", 35));
         arrayList.add(new Cake(5, R.drawable.cake2, "Chese burger", "120 gr meat + Lettuce cheese + onion + tomato", 25));
@@ -74,8 +79,23 @@ public class HomeFragment extends Fragment {
                 adt.setActiveButton(btnPizza, btnBugger, btnSandSwich);
             }
         });
+        glList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(String.valueOf(HomeFragment.this));
+                Bundle b = new Bundle();
+
+                intent.putExtras(b);
+
+                startActivity(intent);
+            }
+        });
+
+
+
 
         return view;
+
 
     }
 }
